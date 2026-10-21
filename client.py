@@ -1,3 +1,4 @@
+import pygame
 from pygame import *
 import socket
 import json
@@ -40,7 +41,8 @@ def receive():
 # --- ШРИФТИ ---
 font_win = font.Font(None, 72)
 font_main = font.Font(None, 36)
-# --- ЗОБРАЖЕННЯ ----
+bg_image = image.load("кариінка.jpg").convert_alpha()
+bg_image = transform.scale(bg_image, (WIDTH, HEIGHT))
 
 # --- ЗВУКИ ---
 
